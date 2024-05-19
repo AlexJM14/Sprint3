@@ -58,6 +58,10 @@
                             <constraint firstItem="uPH-hU-LD6" firstAttribute="top" secondItem="n9H-K3-wqz" secondAttribute="bottom" constant="20" id="wc6-Ce-81V"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnBuscar" destination="Eyc-rx-0aZ" id="R5r-HU-NoE"/>
+                        <outlet property="txtFldBuscador" destination="CZN-DF-FRx" id="ZIM-U9-OeY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
