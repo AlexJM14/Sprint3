@@ -24,15 +24,16 @@ class ViewController: UIViewController {
     }
     
     func buscar(){
-        if !txtFldBuscador.text!.isEmpty{
-            AF.request("http://www.omdbapi.com/?apikey=99cc4d2d&t=\(txtFldBuscador.text ?? "")").responseDecodable(of:PeliculaModel.self) {
-                (respuesta) in
-                self.titulo=respuesta.value?.title ?? "Sin resultados"
-                self.fechaLanzamiento=respuesta.value?.released ?? ""
-                self.actores=respuesta.value?.actors ?? ""
-                self.premios=respuesta.value?.awards ?? ""
-                self.portada=respuesta.value?.poster ?? ""
-            }
+        AF.request("http://www.omdbapi.com/?apikey=99cc4d2d&t=\(txtFldBuscador.text ?? "")").responseDecodable(of: PeliculaModel.self) {
+            (respuesta) in
+            self.titulo = respuesta.value?.title ?? "Sin resultados"
+            self.fechaLanzamiento = respuesta.value?.released ?? ""
+            self.actores = respuesta.value?.actors ?? ""
+            self.premios = respuesta.value?.awards ?? ""
+            self.portada = respuesta.value?.poster ?? ""
+            self.performSegue(withIdentifier: "buscar", sender: self)
+            print(self.titulo)
+            print(respuesta.value?.title ?? "Sin resultados")
         }
     }
     
@@ -48,8 +49,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func btnBuscarPeli(_ sender: Any) {
-        if !txtFldBuscador.text!.isEmpty{
-            performSegue(withIdentifier: "buscar", sender: self)}
         buscar()
     }
     
