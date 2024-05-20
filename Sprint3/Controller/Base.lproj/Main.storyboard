@@ -80,39 +80,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Títulorghrgsghhrrufhoufhouhufhwrhgurwhughouwrhgohwrghrrtetwrtwtwrywrywryry" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQG-Q2-AoN">
-                                <rect key="frame" x="40" y="467" width="313" height="79"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="79" id="0VL-10-Jqg"/>
-                                </constraints>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="e5f-id-4tk">
+                                <rect key="frame" x="0.0" y="103" width="393" height="364"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mgp-By-dGL">
+                                <rect key="frame" x="50" y="123" width="293" height="324"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQG-Q2-AoN">
+                                <rect key="frame" x="50" y="458" width="293" height="85"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mgp-By-dGL">
-                                <rect key="frame" x="50" y="123" width="293" height="324"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="324" id="ePf-ej-NKn"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fecha: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x96-y6-hIA">
-                                <rect key="frame" x="40" y="668" width="298" height="55"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x96-y6-hIA">
+                                <rect key="frame" x="50" y="559" width="293" height="59"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Premios: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoR-Nd-TrU">
-                                <rect key="frame" x="40" y="699" width="298" height="119"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="119" id="xXA-23-S2I"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZa-KT-aCP">
+                                <rect key="frame" x="50" y="626" width="293" height="65"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Actores: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZa-KT-aCP">
-                                <rect key="frame" x="40" y="596" width="298" height="64"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoR-Nd-TrU">
+                                <rect key="frame" x="50" y="699" width="293" height="63"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -120,23 +115,25 @@
                         <viewLayoutGuide key="safeArea" id="w93-dX-6R6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="YZa-KT-aCP" firstAttribute="top" secondItem="jQG-Q2-AoN" secondAttribute="bottom" constant="22" id="6i4-8w-Ovm"/>
-                            <constraint firstItem="Mgp-By-dGL" firstAttribute="top" secondItem="w93-dX-6R6" secondAttribute="top" constant="20" id="820-kX-lm3"/>
-                            <constraint firstItem="jQG-Q2-AoN" firstAttribute="leading" secondItem="OoR-Nd-TrU" secondAttribute="leading" id="AxM-Te-D7P"/>
-                            <constraint firstItem="OoR-Nd-TrU" firstAttribute="firstBaseline" secondItem="x96-y6-hIA" secondAttribute="baseline" id="EvY-gz-UXb"/>
-                            <constraint firstItem="jQG-Q2-AoN" firstAttribute="leading" secondItem="x96-y6-hIA" secondAttribute="leading" id="MFl-t3-Dx8"/>
-                            <constraint firstItem="Mgp-By-dGL" firstAttribute="top" secondItem="w93-dX-6R6" secondAttribute="top" constant="20" id="N9B-JB-s3K"/>
-                            <constraint firstItem="OoR-Nd-TrU" firstAttribute="trailing" secondItem="YZa-KT-aCP" secondAttribute="trailing" id="Tt8-Qx-Kvj"/>
-                            <constraint firstItem="OoR-Nd-TrU" firstAttribute="top" secondItem="YZa-KT-aCP" secondAttribute="bottom" constant="39" id="UHn-eI-AwN"/>
-                            <constraint firstItem="OoR-Nd-TrU" firstAttribute="bottom" secondItem="w93-dX-6R6" secondAttribute="bottom" id="XXf-ez-X4a"/>
-                            <constraint firstItem="jQG-Q2-AoN" firstAttribute="leading" secondItem="YZa-KT-aCP" secondAttribute="leading" id="bU5-y7-CTp"/>
-                            <constraint firstItem="Mgp-By-dGL" firstAttribute="leading" secondItem="w93-dX-6R6" secondAttribute="leading" constant="50" id="cEN-hm-iWB"/>
-                            <constraint firstItem="w93-dX-6R6" firstAttribute="trailing" secondItem="jQG-Q2-AoN" secondAttribute="trailing" constant="40" id="du7-vr-WDY"/>
-                            <constraint firstItem="jQG-Q2-AoN" firstAttribute="leading" secondItem="w93-dX-6R6" secondAttribute="leading" constant="40" id="fmw-cG-Sc7"/>
-                            <constraint firstItem="OoR-Nd-TrU" firstAttribute="trailing" secondItem="x96-y6-hIA" secondAttribute="trailing" id="oe2-W5-fh2"/>
-                            <constraint firstItem="w93-dX-6R6" firstAttribute="trailing" secondItem="OoR-Nd-TrU" secondAttribute="trailing" constant="55" id="pC2-lT-gLq"/>
-                            <constraint firstItem="w93-dX-6R6" firstAttribute="trailing" secondItem="Mgp-By-dGL" secondAttribute="trailing" constant="50" id="peP-bZ-4Yz"/>
-                            <constraint firstItem="jQG-Q2-AoN" firstAttribute="top" secondItem="Mgp-By-dGL" secondAttribute="bottom" constant="20" id="zX1-34-odx"/>
+                            <constraint firstItem="jQG-Q2-AoN" firstAttribute="top" secondItem="Mgp-By-dGL" secondAttribute="bottom" constant="10" id="06g-LE-JaU"/>
+                            <constraint firstItem="YZa-KT-aCP" firstAttribute="top" secondItem="x96-y6-hIA" secondAttribute="bottom" constant="10" id="0Jd-gz-cB7"/>
+                            <constraint firstItem="Mgp-By-dGL" firstAttribute="top" secondItem="w93-dX-6R6" secondAttribute="top" constant="20" id="2mx-ic-4Yh"/>
+                            <constraint firstItem="w93-dX-6R6" firstAttribute="trailing" secondItem="jQG-Q2-AoN" secondAttribute="trailing" constant="50" id="AQ2-tU-H6a"/>
+                            <constraint firstItem="Mgp-By-dGL" firstAttribute="leading" secondItem="w93-dX-6R6" secondAttribute="leading" constant="50" id="AWh-5o-8b0"/>
+                            <constraint firstItem="w93-dX-6R6" firstAttribute="trailing" secondItem="YZa-KT-aCP" secondAttribute="trailing" constant="50" id="AYf-7Y-zqn"/>
+                            <constraint firstItem="x96-y6-hIA" firstAttribute="top" secondItem="jQG-Q2-AoN" secondAttribute="bottom" constant="8" symbolic="YES" id="FyM-2P-nvx"/>
+                            <constraint firstItem="w93-dX-6R6" firstAttribute="trailing" secondItem="OoR-Nd-TrU" secondAttribute="trailing" constant="50" id="G4U-6j-DXW"/>
+                            <constraint firstItem="w93-dX-6R6" firstAttribute="trailing" secondItem="Mgp-By-dGL" secondAttribute="trailing" constant="50" id="Ko3-eE-rKU"/>
+                            <constraint firstItem="YZa-KT-aCP" firstAttribute="top" secondItem="x96-y6-hIA" secondAttribute="bottom" constant="8" symbolic="YES" id="R6B-gR-e79"/>
+                            <constraint firstItem="OoR-Nd-TrU" firstAttribute="top" secondItem="YZa-KT-aCP" secondAttribute="bottom" constant="10" id="VDk-fd-SyR"/>
+                            <constraint firstItem="jQG-Q2-AoN" firstAttribute="top" secondItem="Mgp-By-dGL" secondAttribute="bottom" constant="10" id="dPd-9U-X2s"/>
+                            <constraint firstItem="x96-y6-hIA" firstAttribute="top" secondItem="jQG-Q2-AoN" secondAttribute="bottom" constant="10" id="fxn-dE-bJs"/>
+                            <constraint firstItem="jQG-Q2-AoN" firstAttribute="leading" secondItem="w93-dX-6R6" secondAttribute="leading" constant="50" id="jwT-Wc-Kwy"/>
+                            <constraint firstItem="w93-dX-6R6" firstAttribute="trailing" secondItem="x96-y6-hIA" secondAttribute="trailing" constant="50" id="lfS-Xi-9pG"/>
+                            <constraint firstItem="w93-dX-6R6" firstAttribute="trailing" secondItem="x96-y6-hIA" secondAttribute="trailing" constant="50" id="oT0-co-ip4"/>
+                            <constraint firstItem="YZa-KT-aCP" firstAttribute="leading" secondItem="w93-dX-6R6" secondAttribute="leading" constant="50" id="rRO-So-w6N"/>
+                            <constraint firstItem="OoR-Nd-TrU" firstAttribute="leading" secondItem="w93-dX-6R6" secondAttribute="leading" constant="50" id="sc2-Gf-QV4"/>
+                            <constraint firstItem="x96-y6-hIA" firstAttribute="leading" secondItem="w93-dX-6R6" secondAttribute="leading" constant="50" id="xvs-Uq-plr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VlT-NG-KSd"/>
@@ -146,6 +143,7 @@
                         <outlet property="lblFecha" destination="x96-y6-hIA" id="ixl-iI-77b"/>
                         <outlet property="lblPremios" destination="OoR-Nd-TrU" id="5Tx-5T-30S"/>
                         <outlet property="lblTitulo" destination="jQG-Q2-AoN" id="NZC-c8-sMG"/>
+                        <outlet property="spinner" destination="e5f-id-4tk" id="IyY-p5-SYE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HZC-Fr-5h5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

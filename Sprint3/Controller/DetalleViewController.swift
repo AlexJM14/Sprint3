@@ -19,18 +19,24 @@ class DetalleViewController: UIViewController {
     var recibirPremioPelicula:String?
     var recibirActoresPelicula:String?
     var recibirPortadaPelicula:String?
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        lblTitulo.text = recibirTituloPelicula ?? ""
-        lblActores.text = recibirActoresPelicula ?? ""
-        lblFecha.text = recibirFechaPelicula ?? ""
-        lblPremios.text = recibirPremioPelicula ?? ""
         
-        guard let url = URL(string: recibirPortadaPelicula ?? "https://img.freepik.com/vector-premium/no-hay-foto-disponible-icono-vector-simbolo-imagen-predeterminado-imagen-proximamente-sitio-web-o-aplicacion-movil_87543-10615.jpg")else {return}
-        imgPortada.kf.setImage(with: url)
-        // Do any additional setup after loading the view.
+        spinner.startAnimating()
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+            self.spinner.stopAnimating()
+            self.spinner.isHidden = true
+            self.lblTitulo.text = self.recibirTituloPelicula ?? ""
+            self.lblActores.text = self.recibirActoresPelicula ?? ""
+            self.lblFecha.text = self.recibirFechaPelicula ?? ""
+            self.lblPremios.text = self.recibirPremioPelicula ?? ""
+            
+            guard let url = URL(string: self.recibirPortadaPelicula ?? "https://img.freepik.com/vector-premium/no-hay-foto-disponible-icono-vector-simbolo-imagen-predeterminado-imagen-proximamente-sitio-web-o-aplicacion-movil_87543-10615.jpg")else {return}
+            self.imgPortada.kf.setImage(with: url)
+        }
     }
 
 
